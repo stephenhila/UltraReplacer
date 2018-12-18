@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltraReplacer.WinForms", "UltraReplacer.WinForms\UltraReplacer.WinForms.csproj", "{17B74B0A-2464-4E83-ABD1-A0600FEE6913}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltraReplacer.Core", "UltraReplacer.Core\UltraReplacer.Core.csproj", "{88F3EC3A-25FC-4D20-8130-53785AAA28B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{17B74B0A-2464-4E83-ABD1-A0600FEE6913}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17B74B0A-2464-4E83-ABD1-A0600FEE6913}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17B74B0A-2464-4E83-ABD1-A0600FEE6913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88F3EC3A-25FC-4D20-8130-53785AAA28B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F3EC3A-25FC-4D20-8130-53785AAA28B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F3EC3A-25FC-4D20-8130-53785AAA28B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F3EC3A-25FC-4D20-8130-53785AAA28B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
