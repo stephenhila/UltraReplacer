@@ -17,7 +17,8 @@ namespace UltraReplacer.Core.Factories
         }
 
         static ReplaceOptionsFactory _instance;
-        public static ReplaceOptionsFactory GetInstance()
+
+        public static BaseOptionsFactory<ReplaceOptions> GetInstance()
         {
             if (_instance == null)
             {
