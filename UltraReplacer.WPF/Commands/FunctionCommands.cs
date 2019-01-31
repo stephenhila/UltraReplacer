@@ -14,5 +14,7 @@ namespace UltraReplacer.WPF.Commands
                                     new InputGestureCollection() { new KeyGesture(Key.F5) });
         public static readonly RoutedUICommand ReplaceText
             = new RoutedUICommand("ReplaceText", "ReplaceText", typeof(FunctionCommands));
+        public static readonly RoutedUICommand ViewOptions
+            = new RoutedUICommand("ViewOptions", "ViewOptions", typeof(FunctionCommands));
     }
 }

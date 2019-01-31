@@ -68,7 +68,7 @@
             // replacementsToolStripMenuItem
             // 
             this.replacementsToolStripMenuItem.Name = "replacementsToolStripMenuItem";
-            this.replacementsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.replacementsToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
             this.replacementsToolStripMenuItem.Text = "Replacements";
             this.replacementsToolStripMenuItem.Click += new System.EventHandler(this.replacementsToolStripMenuItem_Click);
             // 
@@ -79,7 +79,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.richTextBoxMainText);
             this.Controls.Add(this.MainMenuStrip);
-            this.MainMenuStrip = this.MainMenuStrip;
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.MainMenuStrip.ResumeLayout(false);

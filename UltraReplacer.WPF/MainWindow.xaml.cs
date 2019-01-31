@@ -44,25 +44,34 @@ namespace UltraReplacer.WPF
             {
                 ReplaceText();
             }
+            else if (e.Command == FunctionCommands.ViewOptions)
+            {
+                throw new NotImplementedException();
+            }
         }
 
         private void Command_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
             if (e.Command == FunctionCommands.Refresh)
             {
-#warning TODO SHA: Implement this 'command can execute'
+#warning TODO SHA: Implement Command Can Execute handler for FunctionCommands.Refresh
                 e.CanExecute = true;
             }
             else if (e.Command == FunctionCommands.ReplaceText)
             {
-#warning TODO SHA: Implement this 'command can execute'
+#warning TODO SHA: Implement Command Can Execute handler for FunctionCommands.ReplaceText
+                e.CanExecute = true;
+            }
+            else if (e.Command == FunctionCommands.ViewOptions)
+            {
+#warning TODO SHA: Implement Command Can Execute handler for FunctionCommands.ViewOptions
                 e.CanExecute = true;
             }
         }
 
         #region Private Methods - Find a way to refactor these
         private void ReplaceText()
-            {
+        {
             BaseOptionsFactory<ReplaceOptions> optionsFactory = ReplaceOptionsFactory.GetInstance();
 
             foreach (var replacement in optionsFactory.GetOptions().Replacements)

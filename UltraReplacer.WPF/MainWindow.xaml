@@ -7,17 +7,29 @@
         xmlns:local="clr-namespace:UltraReplacer.WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Window.CommandBindings>
-        <CommandBinding Command="commands:FunctionCommands.ReplaceText" CanExecute="Command_CanExecute" Executed="Command_Executed" />
-    </Window.CommandBindings>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <ToolBar>
-            <Button Grid.Row="0" Command="commands:FunctionCommands.ReplaceText">Replace</Button>
-        </ToolBar>
+        <!--<ToolBar Grid.Row="0">
+            <ToolBar.Items>
+                <Button Command="commands:FunctionCommands.ReplaceText">Replace</Button>
+                <Button Command="commands:FunctionCommands.ViewOptions">Options</Button>
+            </ToolBar.Items>
+        </ToolBar>-->
+        <Menu Grid.Row="0">
+            <MenuItem Header="Edit">
+                <MenuItem Header="Replace" Command="commands:FunctionCommands.ReplaceText" />
+            </MenuItem> <!--Jenifer-->
+            <MenuItem Header="Tools">
+                <MenuItem Header="Options" Command="commands:FunctionCommands.ViewOptions" />
+            </MenuItem>
+        </Menu>
         <TextBox Name="TextBoxMainText" Grid.Row="1" Text="{Binding Text, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  />
     </Grid>
+    <Window.CommandBindings>
+        <CommandBinding Command="commands:FunctionCommands.ReplaceText" CanExecute="Command_CanExecute" Executed="Command_Executed" />
+        <CommandBinding Command="commands:FunctionCommands.ViewOptions" CanExecute="Command_CanExecute" Executed="Command_Executed" />
+    </Window.CommandBindings>
 </Window>
